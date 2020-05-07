@@ -2,10 +2,8 @@ import telebot
 from telebot import types
 import requests
 
-import config
-
-
-bot = telebot.TeleBot(config.BOT_TOKEN)
+BOT_TOKEN = '<API ТОКЕН БОТА>' # тут нужно вставить API токен бота
+bot = telebot.TeleBot(BOT_TOKEN)
 
 def get_my_content(url):
     user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36'
